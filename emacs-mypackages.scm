@@ -1,8 +1,7 @@
-(define-module (gnu packages emacs-mypackages)
-  #:use-module ((guix licenses) #:prefix license:)
-  #:use-module (guix packages)
-  #:use-module (guix build-system emacs)
-  #:use-module (guix git-download))
+(use-modules (guix packages)
+             (guix git-download)
+             (guix licenses)
+             (guix build-system emacs))
 
 (define-public emacs-java-extensions
   (package
@@ -12,16 +11,16 @@
             (method git-fetch)
             (uri (git-reference
                   (url "https://github.com/zimio/emacs-java-extensions")
-                  (commit "a14836ebf8be91734e7bf022b833cbe832730c54")))
+                  (commit "4a115ba67f75e2b8de4628b0b6867e411cff56b8")))
             (file-name (git-file-name name version))
             (sha256
              (base32
-              "1r17kg26jz5386r7a4cdfm9g0zarivc0v5smpgq3jifblvbnbn5k"))))
+              "04v1svmqcv2kw39ghfsw41gzml8xc08cv1pamn42z3kgb3dgvk54"))))
    (build-system emacs-build-system)
-   (propagated-inputs
-    (list tree-sitter tree-sitter-java))
    (home-page "")
    (synopsis "An attempt at extending java support without emacs.")
    (description
     "An attempt at extending java support without emacs.")
    (license gpl3+)))
+
+emacs-java-extensions
