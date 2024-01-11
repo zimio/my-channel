@@ -1,7 +1,8 @@
-(use-modules (guix packages)
-             (guix git-download)
-             (guix licenses)
-             (guix build-system emacs))
+(define-module (gnu packages emacs-mypackages)
+  #:use-module ((guix licenses) #:prefix license:)
+  #:use-module (guix packages)
+  #:use-module (guix build-system emacs)
+  #:use-module (guix git-download))
 
 (define-public emacs-java-extensions
   (package
