@@ -12,11 +12,11 @@
             (method git-fetch)
             (uri (git-reference
                   (url "https://github.com/zimio/emacs-java-extensions")
-                  (commit "4a115ba67f75e2b8de4628b0b6867e411cff56b8")))
+                  (commit "4e085bff74e805b9be3ee72eea37b9a6c2f7f282")))
             (file-name (git-file-name name version))
             (sha256
              (base32
-              "04v1svmqcv2kw39ghfsw41gzml8xc08cv1pamn42z3kgb3dgvk54"))))
+              "0ld8wynx2sz6nan08wbvvdvlcsb1awlai9pdcfh1n0hdagjq889k"))))
    (build-system emacs-build-system)
    (home-page "")
    (synopsis "An attempt at extending java support without emacs.")
