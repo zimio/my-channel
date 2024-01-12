@@ -1,7 +1,8 @@
-(use-modules (guix packages)
-             (guix git-download)
-             (guix licenses)
-             (guix build-system emacs))
+(define-module (emacs-mypackages)
+  #:use-module (guix packages)
+  #:use-module (guix licenses)
+  #:use-module (guix build-system emacs)
+  #:use-module (guix git-download))
 
 (define-public emacs-java-extensions
   (package
@@ -22,5 +23,3 @@
    (description
     "An attempt at extending java support without emacs.")
    (license gpl3+)))
-
-emacs-java-extensions
