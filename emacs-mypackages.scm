@@ -7,7 +7,7 @@
 (define-public emacs-java-extensions
   (package
    (name "emacs-java-extensions")
-   (version "0.0.1")
+   (version "0.0.2")
    (source (origin
             (method git-fetch)
             (uri (git-reference
