@@ -16,7 +16,7 @@
             (file-name (git-file-name name version))
             (sha256
              (base32
-              "16dif35s5bb6jznb8nvyhr6dp12zks22byxvqnris600zzc6ij7r"))))
+              "1b1ylq3zc25qaphhp12llyzp5qvpagi3j9k9rxhyyiqpwcv4zd2n"))))
    (build-system emacs-build-system)
    (home-page "")
    (synopsis "An attempt at extending java support without emacs.")
